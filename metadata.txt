@@ -1,0 +1,49 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Hardy Cross
+qgisMinimumVersion=2.0
+description=Hardy cross pipeline solving
+version=1.0
+author=Balaji Ramesh
+email=balaji.9th@gmail.com
+
+about=This plugin is used to solve pipe networks(lines and polylines) using hardy cross method (https://en.wikipedia.org/wiki/Hardy_Cross_method). 
+	The sample data is also included in this repository. 
+	For the plugin to work properly on a vector layer, the layer must contain atleast three attributes ie."name","FLOW","k", and the direction of the line plays an important role
+	Where
+	-name: name of the segment. The dead ends must be named with "O". The direction of the line and the naming must match. that is OA is not equal as AO,where OA represent flow from O to A while AO is the counterwise.
+	
+	-FLOW: the flow value
+	
+	-k-head loss per unit flow
+	
+	Select the layer on which the plugin should run and click the plugin's icon or Plugins->HardyCross->Solve for active layer
+
+tracker=https://github.com/balajiceg/HardyCrossPlugin/issues
+repository=https://github.com/balajiceg/HardyCrossPlugin
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=hardy cross,pipline,head loss,pipe network,Moment distribution method
+
+homepage=
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
