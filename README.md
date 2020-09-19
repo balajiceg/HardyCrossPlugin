@@ -1,6 +1,6 @@
 # Plugin for soving pipe networks using hardy cross method
 Installation
-    Download this folder and copy it to QGIS plugins directory.
+    Download this folder and copy it to [QGIS plugins directory](https://gis.stackexchange.com/questions/274311/qgis-3-plugin-folder-location).
     
 This plugin is used to solve pipe networks(lines and polylines) using hardy cross method (https://en.wikipedia.org/wiki/Hardy_Cross_method). 
 	The sample data is also included in this repository. 
